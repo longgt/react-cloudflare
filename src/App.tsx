@@ -55,6 +55,7 @@ const ParentComponent = () => {
   return (
     <React.Fragment>
       <h1>Parent component increases counter every second</h1>
+      <div>Current counter: {counter}</div>
       <div className={'child'}>
         <div className={'title'}>Child component (Re-renders every second along with parent)</div>
         <ChildComponent getCounter={getCounter} />
